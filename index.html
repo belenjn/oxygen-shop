@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Oxygen Shop</title>
+  </head>
+
+  <body>
+
+    </div>
+    <nav class="nav">
+      <div class="nav__container">
+        <p class="logo">OXYGENShop</p>
+        <input type="checkbox" id="hamburger" />
+        <div class="nav__menu">
+          <ul class="nav__menu__ul">
+            <li><a class="nav__menu__a" href="#why-us">Why us</a></li>
+            <li><a class="nav__menu__a" href="#benefits">Benefits</a></li>
+            <li><a class="nav__menu__a" href="#prices">Prices</a></li>
+            <li><a class="nav__menu__a" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="percentage-scroller">
+      <div class="loading"></div>
+    </div>
+    <header class="header">
+      <div class="header__info">
+        <h1 class="header__info_h1">Sell More!</h1>
+        <p class="header__info__p">
+          Open shop on our platform and Increase your sales
+        </p>
+        <button class="header__info__btn btn-primary">Open your shop</button>
+      </div>
+    </header>
+    <main>
+      <div class="btn__scroll_up">
+        <svg
+          class="btn__scroll_up__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            d="M11 20V7.75L5.75 13 5 12.34l6.5-6.5 6.5 6.5-.75.66L12 7.75V20h-1Z"
+          />
+        </svg>
+      </div>
+      <section id="why-us" class="section__info">
+        <h2>The most popular sales platform in country</h2>
+        <div class="section__info__container">
+          <div class="section__info__div">
+            <div class="section__info__div__icon">
+              <div
+                class="section__info__div__icon__circle section__info__div__icon__circle--bg-secundary"
+              ></div>
+              <img src="./assets/icons/person.svg" alt=" " />
+            </div>
+            <strong>100000+</strong>
+            <p>daily entries</p>
+          </div>
+          <div class="section__info__div">
+            <div class="section__info__div__icon">
+              <div
+                class="section__info__div__icon__circle section__info__div__icon__circle--bg-primary"
+              ></div>
+              <img src="./assets/icons/eye.svg" alt=" " />
+            </div>
+            <strong>2000000+</strong>
+            <p>seen products every day</p>
+          </div>
+          <div class="section__info__div">
+            <div class="section__info__div__icon">
+              <div
+                class="section__info__div__icon__circle section__info__div__icon__circle--bg-special"
+              ></div>
+              <img src="./assets/icons/catalog.svg" alt="" />
+            </div>
+            <strong>100000+</strong>
+            <p>added posts daily</p>
+          </div>
+        </div>
+      </section>
+      <section id="benefits" class="reasons-sales">
+        <div class="benefits__container">
+          <div class="benefits__container__div">
+            <div class="img--macbook">
+              <img src="./assets/img/macbook.png" alt="Macbook" />
+            </div>
+            <div class="benefits__container__div__content">
+              <h3>Be always first</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+              <hr class="hr--secundary" />
+            </div>
+          </div>
+          <div class="benefits__container__div">
+            <div class="img--iphone">
+              <img src="./assets/img/iphone.png" alt="Iphone" />
+            </div>
+            <div class="benefits__container__div__content">
+              <h3>Your shop is where you are!</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+              <hr class="hr--primary" />
+            </div>
+          </div>
+          <div class="benefits__container__div--separate">
+            <div
+              class="benefits__container__div benefits__container__div--no-flex"
+            >
+              <h3>Increase recognition your brand!</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+              <hr class="hr--special" />
+            </div>
+            <div id="trumpet"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section__slide">
+        <div id="slider" class="slide__viewer">
+
+          <img
+            src="./assets/img/example1.jpg"
+            alt="Foto de portátil con planta y libreta"
+            class="slide__img slide__img--active"
+          />
+          <img
+            src="./assets/img/example2.jpg"
+            alt="Foto de un café"
+            class="slide__img"
+          />
+          <img
+            src="./assets/img/example3.jpg"
+            alt="Foto de un portátil"
+            class="slide__img"
+          />
+          <img
+            src="./assets/img/example4.jpg"
+            alt="Foto de persona sujetando algunos billetes"
+            class="slide__img"
+          /> 
+          
+        <div class="container__arrow container__arrow--right" id="arrow-right">></div>
+        <div class="container__arrow container__arrow--left" id="arrow-left"><</div>
+        </div>
+       
+        
+        <div class="slide__btn__container">
+          <button class="slide__btn slide__btn--active"></button>
+          <button class="slide__btn"></button>
+          <button class="slide__btn"></button>
+          <button class="slide__btn"></button>
+        </div>
+      </section>
+      <section id="prices" class="pricing">
+        <h4>Pricing</h4>
+        <div class="pricing__currency">
+          <select name="currency__select" class="pricing__currency__select">
+            <option value="gbp" id="gbp-option">GBP - ₤</option>
+            <option value="eur" id="eur-option">EUR - €</option>
+            <option value="usd" id="usd-option" selected>USD - $</option>
+          </select>
+        </div>
+        <div class="pricing__container">
+          <div
+            class="pricing__container__price pricing__container__price--color-secundary basic"
+          >
+            <p class="pricing__container__price__p">
+              Basic
+              <mark id="priceBasic"></mark>
+            </p>
+            <ul class="price__list">
+              <li class="price__list__item">100 MB HDD</li>
+              <li class="price__list__item">1 Subdomain</li>
+              <li class="price__list__item">2 E-mails</li>
+              <li class="price__list__item price__list__item--cross">
+                Two years license
+              </li>
+              <li class="price__list__item price__list__item--cross">
+                Full support
+              </li>
+            </ul>
+            <button class="price__btn btn-secundary">Begin</button>
+          </div>
+          <div class="pricing__container__price professional">
+            <p
+              class="pricing__container__price__p pricing__container__price__p--offer offer"
+            >
+              Professional
+              <mark id="priceProfessional"></mark>
+            </p>
+            <ul class="price__list">
+              <li class="price__list__item">500 MB HDD</li>
+              <li class="price__list__item">2 Subdomain</li>
+              <li class="price__list__item">5 E-mails</li>
+              <li class="price__list__item">One years license</li>
+              <li class="price__list__item price__list__item--cross">
+                Full support
+              </li>
+            </ul>
+            <button class="price__btn btn-primary">Begin</button>
+          </div>
+          <div class="pricing__container__price premium">
+            <p
+              class="pricing__container__price__p pricing__container__price__p--offer"
+            >
+              Premium
+              <mark id="pricePremium"></mark>
+            </p>
+            <ul class="price__list">
+              <li class="price__list__item">2 GB HDD</li>
+              <li class="price__list__item">5 Subdomain</li>
+              <li class="price__list__item">20 E-mails</li>
+              <li class="price__list__item">Two years license</li>
+              <li class="price__list__item">Full support</li>
+            </ul>
+            <button class="price__btn btn-special">Begin</button>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section__contact">
+        <div class="contact">
+          <div>
+            <h5 class="contact__h5">Any Questions?</h5>
+            <p class="contact__p">Leave your email address or call us!</p>
+          </div>
+          <div class="contact__info">
+            <p class="contact__info__p">
+              <img
+                src="./assets/icons/mail.svg"
+                alt="Icono de correo"
+              />belen@gmail.com
+            </p>
+            <p class="contact__info__p">
+              <img src="./assets/icons/phone.svg" alt="Icono de teléfono" />
+              123 45 67 89
+            </p>
+          </div>
+        </div>
+        <form class="form" name="form">
+          <label class="form__label">
+            Name
+            <input
+              class="form__input"
+              id="name"
+              type="text"
+              name="name-person"
+              minlength="2"
+              maxlength="100"
+              required
+            />
+          </label>
+          <label class="form__label">
+            Email
+            <input id="email" class="form__input" type="email" name="email"  required />
+          </label>
+          <label class="form__label form__label--checkbox" id="data-protection">
+            <input
+              class="form__checkbox"
+              type="checkbox"
+              name="data-protection"
+              required
+            />
+            <p class="form__label__p">
+              I hereby give consent for my personal data included in my
+              application to be processed for the purposes of the recruitment
+              process under the European Parliament’s and Council of the
+              European Union Regulation on the Protection of Natural Persons as
+              of 27 April 2016, with regard to the processing of personal data
+              and on the free movement of such data, and repealing Directive
+              95/46/EC (Data Protection Directive)
+            </p>
+          </label>
+          <button id="submit-btn" class="form__btn btn-primary" >Send</button>
+        </form>
+      </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__info">
+          <p class="logo">OXYGENShop</p>
+          © 2022 OXYGEN, All Rights Reserved
+        </div>
+        <div class="footer__social_media">
+          <a href="https://twitter.com/"
+            ><img src="./assets/icons/twitter.svg" alt="Icono de twitter"
+          /></a>
+          <a href="https://www.facebook.com/"
+            ><img src="./assets/icons/facebook.svg" alt="Icono de facebook"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+
+    <div class="popup-wrapper">
+      <div class="popup">
+          
+        <div class="popup-close">x</div>
+        <div class="popup-content">
+          <form id="form-popup">
+          <h3>Subscribe to our newsletter!</h3>
+          <div class="image">
+            <img src="./assets/img/image.png" />
+          </div>
+          <div class="lorem">
+          </div>
+        
+          <input
+            id="email-popup"
+            type="email"
+            class="info__newsletter__input"
+            name="newsletter__email"
+            placeholder="Insert your email here"
+            required
+          />
+          <button id="button-email">Click to suscribe</button>
+        </form>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+
+  </body>
+</html>
