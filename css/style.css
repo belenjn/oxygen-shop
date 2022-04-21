@@ -276,7 +276,7 @@ button {
 .header {
   height: 450px;
   margin-bottom: 2rem;
-  background: url(../assets/img/bg-header-mobile.png) no-repeat bottom;
+  background: url(../assets/img/background.png) no-repeat bottom;
   background-size: contain;
 }
 
@@ -929,7 +929,7 @@ visibility: hidden;
 @media only screen and (min-width: 767px) {
   .header {
     height: 550px;
-    background-image: url(/assets/img/background.png);
+    background-image: url(../assets/img/background.png);
     background-size: contain;
   }
 
