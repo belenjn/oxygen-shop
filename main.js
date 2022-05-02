@@ -319,4 +319,3 @@ arrowLeft.addEventListener("click", () => {
   arrayBotones[indice].classList.add("slide__btn--active");
 });
 
-// Revisar responsive y hamburguesa
