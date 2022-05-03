@@ -85,7 +85,6 @@ const handleSubmit = (e) => {
 
 form.addEventListener("submit", handleSubmit);
 
-
 /* Pop up */
 
 const popup = document.querySelector(".popup-wrapper");
@@ -100,7 +99,6 @@ setTimeout(() => {
     !localStorage.getItem("closed_modal")
   ) {
     popup.classList.add("visible");
-    
   }
 }, 5000);
 
@@ -115,9 +113,7 @@ window.onscroll = function () {
       !sessionStorage.getItem("closed_modal") &&
       !localStorage.getItem("closed_modal")
     ) {
-
       popup.classList.add("visible");
-      
     }
   }
 };
@@ -178,7 +174,9 @@ const validEmail = async (url) => {
 const handleSubmitEmail = (e) => {
   const emailValue = document.getElementById("email-popup").value;
 
+
   if (regularExpressionEmail.exec(emailValue)) {
+
     popup.classList.add("noVisible");
     window.alert("Successfully subscribed!");
     sessionStorage.setItem("closed_modal", "1");
@@ -306,16 +304,14 @@ arrowRight.addEventListener("click", () => {
 });
 
 arrowLeft.addEventListener("click", () => {
-  if (indice === 0) {
-    indice = arrayImages.length - 1;
-    boton1.classList.remove("slide__btn--active")
-
-  }
   arrayImages[indice].classList.remove("slide__img--active");
   arrayBotones[indice].classList.remove("slide__btn--active");
   indice--;
+  if (indice < 0) {
+    indice = arrayImages.length - 1;
+    boton1.classList.remove("slide__btn--active");
+  }
 
   arrayImages[indice].classList.add("slide__img--active");
   arrayBotones[indice].classList.add("slide__btn--active");
 });
-

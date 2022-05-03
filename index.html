@@ -314,28 +314,34 @@
       <div class="popup">
           
         <div class="popup-close">x</div>
-        <div class="popup-content">
+
           <form id="form-popup">
-          <h3>Subscribe to our newsletter!</h3>
-          <div class="image">
-            <img src="./assets/img/image.png" />
+            <label class="info__newsletter__label">Email: <input 
+              id="email-popup"
+              type="email" 
+              class="info__newsletter__input"
+              name="newsletter__email" 
+              required></label>
+              <label class="info__newsletter__label info__newsletter__label--checkbox" id="data-protection"
+              for="data-protection">
+              <input class="info__newsletter__checkbox" type="checkbox" name="data-protection" required>
+            
+              <p class="info__newsletter__label__p"> I hereby give consent for my personal data included in my application
+                to be processed for the purposes of
+                the
+                recruitment process under the European Parliament’s and Council of the European Union Regulation on the
+                Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on
+                the
+                free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+              </p>
+            </label>
+          <div class="info__newsletter__form__container__btn">
+            <button class="newsletter__btn btn-primary">Send</button>
           </div>
-          <div class="lorem">
-          </div>
-        
-          <input
-            id="email-popup"
-            type="email"
-            class="info__newsletter__input"
-            name="newsletter__email"
-            placeholder="Insert your email here"
-            required
-          />
-          <button id="button-email">Click to suscribe</button>
         </form>
-        </div>
       </div>
     </div>
+  </main>
     <script src="main.js"></script>
 
   </body>
