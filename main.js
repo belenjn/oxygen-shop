@@ -18,15 +18,15 @@ const progressScroll = () => {
 
 /* Cerrar menú mobile */
 
-const hamburguesa = document.querySelector('#hamburger');
+const hamburguesa = document.querySelector("#hamburger");
 
 const options = document.querySelectorAll(".nav__menu__a");
 
-
-options.forEach(option => option.addEventListener('click', () => {
-  hamburguesa.checked = false;
- }))
-
+options.forEach((option) =>
+  option.addEventListener("click", () => {
+    hamburguesa.checked = false;
+  })
+);
 
 /* Button return to the top */
 
@@ -186,9 +186,7 @@ const validEmail = async (url) => {
 const handleSubmitEmail = (e) => {
   const emailValue = document.getElementById("email-popup").value;
 
-
   if (regularExpressionEmail.exec(emailValue)) {
-
     popup.classList.add("noVisible");
     window.alert("Successfully subscribed!");
     sessionStorage.setItem("closed_modal", "1");
@@ -302,6 +300,7 @@ const arrowLeft = document.querySelector("#arrow-left"); // botón flecha izquie
 // eventos para los botones de flecha
 let indice = 0;
 
+//Botones de flecha
 arrowRight.addEventListener("click", () => {
   arrayImages[indice].classList.remove("slide__img--active");
   arrayBotones[indice].classList.remove("slide__btn--active");
@@ -328,10 +327,9 @@ arrowLeft.addEventListener("click", () => {
   arrayBotones[indice].classList.add("slide__btn--active");
 });
 
-
+//Slider auto
 let i = 0;
-setInterval(function(){
-
+setInterval(function () {
   arrayImages[i].classList.remove("slide__img--active");
   arrayBotones[i].classList.remove("slide__btn--active");
   i++;
@@ -342,5 +340,20 @@ setInterval(function(){
 
   arrayImages[i].classList.add("slide__img--active");
   arrayBotones[i].classList.add("slide__btn--active");
-  
-}, 3000)
+}, 3200);
+
+//Botones azules
+arrayBotones.forEach((button) => {
+  button.addEventListener("click", () => {
+    arrayImages[indice].classList.remove("slide__img--active");
+    arrayBotones[indice].classList.remove("slide__btn--active");
+    indice++;
+
+    if (indice > arrayImages.length - 1) {
+      indice = 0;
+    }
+
+    arrayImages[indice].classList.add("slide__img--active");
+    arrayBotones[indice].classList.add("slide__btn--active");
+  });
+});
