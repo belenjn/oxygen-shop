@@ -21,11 +21,10 @@ const progressScroll = () => {
 const hamburguesa = document.querySelector('#hamburger');
 
 const options = document.querySelectorAll(".nav__menu__a");
-console.log(hamburguesa.checked)
+
 
 options.forEach(option => option.addEventListener('click', () => {
   hamburguesa.checked = false;
-  console.log(hamburguesa.checked)
  }))
 
 
@@ -328,3 +327,20 @@ arrowLeft.addEventListener("click", () => {
   arrayImages[indice].classList.add("slide__img--active");
   arrayBotones[indice].classList.add("slide__btn--active");
 });
+
+
+let i = 0;
+setInterval(function(){
+
+  arrayImages[i].classList.remove("slide__img--active");
+  arrayBotones[i].classList.remove("slide__btn--active");
+  i++;
+
+  if (i > arrayImages.length - 1) {
+    i = 0;
+  }
+
+  arrayImages[i].classList.add("slide__img--active");
+  arrayBotones[i].classList.add("slide__btn--active");
+  
+}, 3000)
