@@ -16,6 +16,19 @@ const progressScroll = () => {
   document.getElementsByClassName("loading")[0].style.width = progress + "%"; //cambiar el % del width según la altura de la página
 };
 
+/* Cerrar menú mobile */
+
+const hamburguesa = document.querySelector('#hamburger');
+
+const options = document.querySelectorAll(".nav__menu__a");
+console.log(hamburguesa.checked)
+
+options.forEach(option => option.addEventListener('click', () => {
+  hamburguesa.checked = false;
+  console.log(hamburguesa.checked)
+ }))
+
+
 /* Button return to the top */
 
 document.querySelector(".btn__scroll_up").addEventListener("click", () => {

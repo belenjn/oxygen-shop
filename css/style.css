@@ -929,6 +929,8 @@ visibility: hidden;
   gap: 10px;
 }
 
+
+
 .form__label--checkbox>.form__label__p,
 .info__newsletter__label--checkbox>.info__newsletter__label__p {
   width: calc(100% - 31px);
@@ -937,6 +939,11 @@ visibility: hidden;
   font-weight: 500;
   text-transform: none;
   letter-spacing: 0;
+}
+
+.info__newsletter__label__p {
+  text-align: justify;
+  font-size: 12px;
 }
 
 .info__newsletter__container {
@@ -1029,6 +1036,17 @@ visibility: hidden;
   }
 }
 
+@media only screen and (min-width: 324px) {
+
+  .nav__menu__a:hover::after {
+    display: none;
+  }
+
+
+
+
+}
+
 @media only screen and (min-width: 424px) {
   .img--macbook::after {
     width: 100%;
@@ -1042,7 +1060,15 @@ visibility: hidden;
     max-height: 240px;
   }
 
+  .nav__menu__a:hover::after {
+
+    display: none;
+  }
+
+
+
 }
+
 
 @media only screen and (min-width: 767px) {
   .header {
