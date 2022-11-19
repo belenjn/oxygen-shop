@@ -81,13 +81,25 @@ const sendValues = async (url) => {
 };
 
 // función envío form
+const formMessage = document.getElementById("formSended");
+
 const handleSubmit = (e) => {
   const emailValue = document.getElementById("email").value;
   button.disabled = false;
 
   regularExpressionEmail.exec(emailValue) // si email coincide con la expresión regular...
-    ? (button.disabled = true) // el botón pasa a estar inhabilitado
-    : window.alert("Introduce un email válido"); // alert
+    ? ((button.disabled = true),
+      formMessage.classList.remove("hidden"),
+      formMessage.classList.add("formMessage"),
+
+      setTimeout(() => {
+        formMessage.classList.remove("formMessage"),
+        formMessage.classList.add("hidden")
+
+      }, 2000)
+      )
+    : // el botón pasa a estar inhabilitado
+      window.alert("Introduce un email válido"); // alert
 
   e.preventDefault();
 
