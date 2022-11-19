@@ -30,6 +30,18 @@ body {
   display: none;
 }
 
+.formMessage {
+  align-self: center;
+  box-shadow: 5px 10px 20px var(--shadow-grey);
+  border: none;
+  border-radius: 8px;
+  color: #4fc09c;
+  font-weight: 800;
+  text-align: center;
+  padding: 5px;
+  width: 80%;
+}
+
 button {
   cursor: pointer;
   padding: 1rem 3rem;
